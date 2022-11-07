@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AudioProcess;
+using System;
+using System.Windows.Forms;
 
 namespace Synthie
 {
@@ -30,6 +32,37 @@ namespace Synthie
             phase += freq * samplePeriod;
 
             return true;
+        }
+
+        public void MakeSine(Sound sound)
+        {
+
+            if (sound == null)
+            {
+                MessageBox.Show("Need a sound loaded first", "Generation Error");
+                return;
+            }
+
+            sound.Seek(0);
+
+            //pull needed sound file encoding parameters
+            int sampleRate = sound.SampleRate;
+            float duration = sound.Duration - 1.0f / sampleRate;
+
+            //setup progress bar
+            ProgressBar progress = new ProgressBar();
+            progress.Runworker();
+
+            //make the sine wave
+            for (double time = 0.0; time < duration; time += 1.0 / sampleRate)
+            {
+                //make the value at this frame
+                float val = (float)(amp * Math.Sin(time * 2 * Math.PI * freq));
+
+                sound.WriteNextFrame(val);
+
+                progress.UpdateProgress(time / duration);
+            }
         }
     }
 }
