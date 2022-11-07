@@ -4,8 +4,8 @@
     {
         protected double time;
         protected double duration;
-        protected ToneInstrument source;
+        protected AudioNode source;
         public double Duration { get => duration; set => duration = value; }
-        public ToneInstrument Source { get => source; set => source = value; }
+        public AudioNode Source { get => source; set => source = value; }
     }
 }
