@@ -77,8 +77,21 @@ namespace Synthie
                 Instrument instrument = null;
                 if (note.Instrument == "ToneInstrument")
                 {
+                    // Envelope to prevent popping
                     Envelope envelope = new AR(0.05, 0.05);
                     instrument = new ToneInstrument(envelope);
+                }
+                if (note.Instrument == "Piano")
+                {
+                    // Envelope to prevent popping
+                    Envelope envelope = new AR(0.05, 0.1);
+                    instrument = new Piano.Piano(envelope);
+                }
+                if (note.Instrument == "Organ")
+                {
+                    // Short attack, short decay envelope, release to prevent popping
+                    Envelope envelope = new ADSR(0.1, 0.1, 0.75, 0.05);
+                    instrument = new Organ.Organ(envelope);
                 }
 
                 // Configure the instrument object

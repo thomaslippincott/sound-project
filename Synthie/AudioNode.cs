@@ -2,7 +2,7 @@
 {
     public abstract class AudioNode
     {
-        protected double[] frame = new double[2];
+        protected float[] frame = new float[2];
         protected double samplePeriod;
         protected int sampleRate;
         protected double bpm;
@@ -11,14 +11,14 @@
         /// Access a generated audio frame
         /// </summary
         /// ><returns>the sound sample</returns>
-        public double[] Frame() { return frame; }
+        public float[] Frame() { return frame; }
 
         /// <summary>
         /// Access one channel of a generated audio frame
         /// </summary>
         /// <param name="c">the channel</param>
         /// <returns>the value of at the channel in the sound sample</returns>
-        public double Frame(int c) { return frame[c]; }
+        public float Frame(int c) { return frame[c]; }
 
         public int SampleRate { get => sampleRate; set => sampleRate = value; }
 
