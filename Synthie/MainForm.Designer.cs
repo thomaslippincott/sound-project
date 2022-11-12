@@ -45,6 +45,7 @@
             this.songToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDlg = new System.Windows.Forms.SaveFileDialog();
             this.openFileDlg = new System.Windows.Forms.OpenFileDialog();
+            this.additiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,11 +57,12 @@
             this.fileToolStripMenuItem,
             this.generateToolStripMenuItem,
             this.playbackToolStripMenuItem,
-            this.tasksToolStripMenuItem});
+            this.tasksToolStripMenuItem,
+            this.additiveToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1600, 40);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(2133, 49);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -70,20 +72,20 @@
             this.openScoreToolStripMenuItem,
             this.exitItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(71, 36);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(87, 45);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openScoreToolStripMenuItem
             // 
             this.openScoreToolStripMenuItem.Name = "openScoreToolStripMenuItem";
-            this.openScoreToolStripMenuItem.Size = new System.Drawing.Size(287, 44);
+            this.openScoreToolStripMenuItem.Size = new System.Drawing.Size(361, 54);
             this.openScoreToolStripMenuItem.Text = "Open Score...";
             this.openScoreToolStripMenuItem.Click += new System.EventHandler(this.openScoreToolStripMenuItem_Click);
             // 
             // exitItem
             // 
             this.exitItem.Name = "exitItem";
-            this.exitItem.Size = new System.Drawing.Size(287, 44);
+            this.exitItem.Size = new System.Drawing.Size(361, 54);
             this.exitItem.Text = "Exit";
             this.exitItem.Click += new System.EventHandler(this.exitItem_Click);
             // 
@@ -95,13 +97,13 @@
             this.toolStripSeparator1,
             this.hz1000Item});
             this.generateToolStripMenuItem.Name = "generateToolStripMenuItem";
-            this.generateToolStripMenuItem.Size = new System.Drawing.Size(131, 36);
+            this.generateToolStripMenuItem.Size = new System.Drawing.Size(163, 45);
             this.generateToolStripMenuItem.Text = "Generate";
             // 
             // fileOutputItem
             // 
             this.fileOutputItem.Name = "fileOutputItem";
-            this.fileOutputItem.Size = new System.Drawing.Size(293, 44);
+            this.fileOutputItem.Size = new System.Drawing.Size(366, 54);
             this.fileOutputItem.Text = "File Output";
             this.fileOutputItem.Click += new System.EventHandler(this.fileOutputItem_Click);
             // 
@@ -110,19 +112,19 @@
             this.audioOutputItem.Checked = true;
             this.audioOutputItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.audioOutputItem.Name = "audioOutputItem";
-            this.audioOutputItem.Size = new System.Drawing.Size(293, 44);
+            this.audioOutputItem.Size = new System.Drawing.Size(366, 54);
             this.audioOutputItem.Text = "Audio Output";
             this.audioOutputItem.Click += new System.EventHandler(this.audioOutputItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(290, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(363, 6);
             // 
             // hz1000Item
             // 
             this.hz1000Item.Name = "hz1000Item";
-            this.hz1000Item.Size = new System.Drawing.Size(293, 44);
+            this.hz1000Item.Size = new System.Drawing.Size(366, 54);
             this.hz1000Item.Text = "1000Hz Tone";
             this.hz1000Item.Click += new System.EventHandler(this.hz1000Item_Click);
             // 
@@ -132,20 +134,20 @@
             this.playToolStripMenuItem,
             this.stopToolStripMenuItem});
             this.playbackToolStripMenuItem.Name = "playbackToolStripMenuItem";
-            this.playbackToolStripMenuItem.Size = new System.Drawing.Size(126, 36);
+            this.playbackToolStripMenuItem.Size = new System.Drawing.Size(158, 45);
             this.playbackToolStripMenuItem.Text = "Playback";
             // 
             // playToolStripMenuItem
             // 
             this.playToolStripMenuItem.Name = "playToolStripMenuItem";
-            this.playToolStripMenuItem.Size = new System.Drawing.Size(195, 44);
+            this.playToolStripMenuItem.Size = new System.Drawing.Size(245, 54);
             this.playToolStripMenuItem.Text = "Play";
             this.playToolStripMenuItem.Click += new System.EventHandler(this.playToolStripMenuItem_Click);
             // 
             // stopToolStripMenuItem
             // 
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(195, 44);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(245, 54);
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
             // 
@@ -154,13 +156,13 @@
             this.tasksToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.songToolStripMenuItem});
             this.tasksToolStripMenuItem.Name = "tasksToolStripMenuItem";
-            this.tasksToolStripMenuItem.Size = new System.Drawing.Size(88, 36);
+            this.tasksToolStripMenuItem.Size = new System.Drawing.Size(111, 45);
             this.tasksToolStripMenuItem.Text = "Tasks";
             // 
             // songToolStripMenuItem
             // 
             this.songToolStripMenuItem.Name = "songToolStripMenuItem";
-            this.songToolStripMenuItem.Size = new System.Drawing.Size(202, 44);
+            this.songToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
             this.songToolStripMenuItem.Text = "Song";
             this.songToolStripMenuItem.Click += new System.EventHandler(this.songToolStripMenuItem_Click);
             // 
@@ -172,15 +174,21 @@
             // 
             this.openFileDlg.Filter = "Score files (*.score)|*.score|All Files (*.*)|*.*";
             // 
+            // additiveToolStripMenuItem
+            // 
+            this.additiveToolStripMenuItem.Name = "additiveToolStripMenuItem";
+            this.additiveToolStripMenuItem.Size = new System.Drawing.Size(151, 45);
+            this.additiveToolStripMenuItem.Text = "Additive";
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.ClientSize = new System.Drawing.Size(2133, 1073);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "MainForm";
             this.Text = "Project 2: Lippincott Pfeiffer Roberts Sakordekar";
             this.menuStrip1.ResumeLayout(false);
@@ -208,6 +216,7 @@
         private System.Windows.Forms.ToolStripMenuItem tasksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem songToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openScoreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem additiveToolStripMenuItem;
     }
 }
 
