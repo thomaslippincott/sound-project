@@ -84,6 +84,11 @@ namespace Synthie
 
                     instrument = new WaveSynthInstrument(WaveFactory.Tuba);
                 }
+                if (note.Instrument == "Bruh")
+                {
+
+                    instrument = new WaveSynthInstrument(WaveFactory.Bruh);
+                }
 
                 if (note.Instrument == "Sax")
                 {

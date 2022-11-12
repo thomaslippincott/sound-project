@@ -56,8 +56,8 @@
 
             for (int c = 0; c < currFrame.Length; c++)
             {
-                frame[c] = (framePosition - (int)framePosition) * nextFrame[c]
-                    + (1 - (framePosition - (int)framePosition)) * currFrame[c];
+                frame[c] = (float)((framePosition - (int)framePosition) * nextFrame[c]
+                    + (1 - (framePosition - (int)framePosition)) * currFrame[c]);
             }
 
             if (framePosition > loopEndFrame && duration - time > sampleTime - sustainTime)
