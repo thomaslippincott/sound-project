@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Synthie.WaveTable;
+using System;
 using System.Collections.Generic;
 using System.Xml;
 
@@ -40,6 +41,8 @@ namespace Synthie
             bpm = 120;
             secperbeat = 60.0 / bpm;
             beatspermeasure = 4;
+
+            WaveFactory.SampleRate = sampleRate;
         }
 
         /// <summary>
@@ -75,11 +78,24 @@ namespace Synthie
 
                 // Create the instrument object
                 Instrument instrument = null;
+                
+                if (note.Instrument == "Tuba")
+                {
+
+                    instrument = new WaveSynthInstrument(WaveFactory.Tuba);
+                }
+
+                if (note.Instrument == "Sax")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Sax);
+                }
+
                 if (note.Instrument == "ToneInstrument")
                 {
                     // Envelope to prevent popping
                     Envelope envelope = new AR(0.05, 0.05);
                     instrument = new ToneInstrument(envelope);
+
                 }
                 if (note.Instrument == "Piano")
                 {

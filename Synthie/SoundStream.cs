@@ -5,7 +5,7 @@ using System.IO;
 using System.Windows.Forms;
 
 
-class SoundStream : Sound
+public class SoundStream : Sound
 {
     private int bytesPerFrame = 0;
     private WaveFileReader readerStream;
@@ -265,7 +265,7 @@ class SoundStream : Sound
     override public void Seek(int i)
     {
         if (readerStream != null)
-            readerStream.Seek(i, SeekOrigin.Begin);
+            readerStream.Seek(i * bytesPerFrame, SeekOrigin.Begin);
     }
 
     new public void Stop()

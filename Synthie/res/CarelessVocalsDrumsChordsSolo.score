@@ -76,6 +76,7 @@
       	<note measure="1" beat="2" count="0.75" note="bass"/>
 	<note measure="1" beat="2.75" count="0.25" note="bass"/>
 	<note measure="1" beat="4" count="1" note="bass"/>
+
 	<note measure="1" beat="1" count="0.25" note="snare"/>
 	<note measure="1" beat="3" count="0.5" note="bass"/>
 	<note measure="1" beat="3.5" count="0.375" note="bass"/>
@@ -244,6 +245,7 @@
 	<note measure="18" beat="3.5" count="0.25" note="D6"/>
 	<note measure="18" beat="3.75" count="0.5" note="A5"/>
 	<note measure="18" beat="4.25" count="0.75" note="F5"/>
+
 
 	<note measure="19" beat="1" count="0.5" note="C6"/>
 	<note measure="19" beat="1.5" count="0.25" note="A#5"/>

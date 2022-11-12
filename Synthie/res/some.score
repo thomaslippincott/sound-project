@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score bpm="100" beatspermeasure="4">
+   <instrument instrument="ToneInstrument">
+      <note measure="1" beat="4" count="1" note="F#4"/>
+	   
+      <note measure="2" beat="1" count="0.6" note="C#5"/>
+      <note measure="2" beat="1.5" count="0.6" note="A#4"/>  
+      <note measure="2" beat="2" count="1" note="A#4"/>
+      <note measure="2" beat="3" count="0.6" note="G#4"/>
+      <note measure="2" beat="3.5" count="0.6" note="F#4"/>
+      <note measure="2" beat="4" count="0.6" note="F#4"/>
+      <note measure="2" beat="4.5" count="1" note="B4"/>
+	   
+      <note measure="3" beat="1.5" count="0.6" note="A#4"/>
+      <note measure="3" beat="2" count="0.6" note="A#4"/>
+      <note measure="3" beat="2.5" count="0.6" note="G#4"/>
+      <note measure="3" beat="3" count="0.6" note="G#4"/>
+      <note measure="3" beat="3.5" count="1" note="F#4"/>
+      <note measure="3" beat="4.5" count="0.6" note="F#4"/>
+	   
+      <note measure="4" beat="1" count="0.6" note="C#5"/>
+      <note measure="4" beat="1.5" count="0.6" note="A#4"/>
+      <note measure="4" beat="2" count="1" note="A#4"/>
+      <note measure="4" beat="3" count="0.6" note="G#4"/>
+      <note measure="4" beat="3.5" count="0.6" note="F#4"/>
+      <note measure="4" beat="4" count="0.6" note="F#4"/>
+      <note measure="4" beat="4.5" count="1" note="D#4"/>
+	   
+      <note measure="5" beat="1.5" count="1.5" note="C#4"/>
+   </instrument>
+</score>
