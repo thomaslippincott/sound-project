@@ -30,6 +30,8 @@ namespace Synthie
         public double SamplePeriod { get => samplePeriod; set => samplePeriod = value; }
         public double Time { get => time; }
 
+        private Effects.Effect effect;
+
         public SongScore()
         {
             channels = 2;
@@ -40,6 +42,8 @@ namespace Synthie
             bpm = 120;
             secperbeat = 60.0 / bpm;
             beatspermeasure = 4;
+
+            effect = new Effects.RingModulation(4410, 0.1, sampleRate);
         }
 
         /// <summary>
@@ -88,7 +92,7 @@ namespace Synthie
                     instrument.Bpm = bpm;
                     instrument.SetNote(note);
                     instrument.Start();
-
+                    instrument.SetEffect(ref effect);
                     instruments.Add(instrument);
                 }
 
@@ -150,6 +154,8 @@ namespace Synthie
             // number of seconds per beat.  The inverse of seconds
             // per beat is beats per second.
             beat += SamplePeriod / secperbeat;
+
+            effect.UpdateTime();
 
             // When the measure is complete, we move to
             // a new measure.  We might be a fraction into

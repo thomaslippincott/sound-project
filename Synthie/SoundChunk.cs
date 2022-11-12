@@ -379,5 +379,10 @@ namespace AudioProcess
         }
         #endregion Playback functions
 
+        public void SaveSound(string path, SoundFileTypes type)
+        {
+            SaveAs(path, type);
+        }
+
     }
 }

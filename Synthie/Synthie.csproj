@@ -78,6 +78,11 @@
   <ItemGroup>
     <Compile Include="AR.cs" />
     <Compile Include="AudioNode.cs" />
+    <Compile Include="Effects\Chorus.cs" />
+    <Compile Include="Effects\Effect.cs" />
+    <Compile Include="Effects\NoiseGatingEffect.cs" />
+    <Compile Include="Effects\Reverb.cs" />
+    <Compile Include="Effects\RingModulation.cs" />
     <Compile Include="Envelope.cs" />
     <Compile Include="Instrument.cs" />
     <Compile Include="MainForm.cs">

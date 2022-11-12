@@ -12,6 +12,10 @@ namespace Synthie
 
         public double Frequency { get => freq; set => freq = value; }
 
+        public double GetAmp()
+        {
+            return amp;
+        }
         public SineWave()
         {
             phase = 0;

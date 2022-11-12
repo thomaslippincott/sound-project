@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Synthie.Effects;
+using System;
 
 namespace Synthie.WaveTable
 {
@@ -15,6 +16,11 @@ namespace Synthie.WaveTable
         }
 
         public override void Start()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetEffect(ref Effect eff)
         {
             throw new NotImplementedException();
         }

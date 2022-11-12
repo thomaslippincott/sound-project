@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Synthie.Effects;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,11 @@ namespace Synthie.Piano
         }
 
         public override void Start()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override void SetEffect(ref Effect eff)
         {
             throw new NotImplementedException();
         }
