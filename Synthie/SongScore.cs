@@ -94,6 +94,16 @@ namespace Synthie
                     instrument = new Organ.Organ(envelope);
                 }
 
+                if (note.Instrument == "Additive")
+                {
+                    instrument = new Additive.Additive();
+                }
+
+                if (note.Instrument == "Drums")
+                {
+                    instrument = new Drums.Drums();
+                }
+
                 // Configure the instrument object
                 if (instrument != null)
                 {

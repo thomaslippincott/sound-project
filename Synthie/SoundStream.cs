@@ -226,12 +226,23 @@ class SoundStream : Sound
         return count;
     }
 
+    //override public float[] ReadNextFrame()
+    //{
+    //    //sanity check
+    //    if (readerStream.Position >= readerStream.Length)
+    //        return null;
+
+    //    byte[] temp = new byte[bytesPerFrame];
+    //    readerStream.Read(temp, 0, bytesPerFrame);
+    //    return ByteToFloat(temp);
+    //}
+
     override public float[] ReadNextFrame()
     {
         //sanity check
         if (readerStream.Position >= readerStream.Length)
             return null;
-
+        
         byte[] temp = new byte[bytesPerFrame];
         readerStream.Read(temp, 0, bytesPerFrame);
 
@@ -248,6 +259,7 @@ class SoundStream : Sound
         }
         else
             return ByteToFloat(temp);
+
     }
 
     override public void Seek(int i)

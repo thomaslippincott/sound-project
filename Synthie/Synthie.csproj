@@ -76,9 +76,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additive\Additive.cs" />
     <Compile Include="ADSR.cs" />
     <Compile Include="AR.cs" />
     <Compile Include="AudioNode.cs" />
+    <Compile Include="Drums\Drums.cs" />
     <Compile Include="Envelope.cs" />
     <Compile Include="Instrument.cs" />
     <Compile Include="MainForm.cs">
@@ -226,6 +228,25 @@
     <EmbeddedResource Include="res\PianoSamples\G#5l.wav" />
     <EmbeddedResource Include="res\PianoSamples\G#6l.wav" />
     <EmbeddedResource Include="res\PianoSamples\G#7l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G7s.wav" />
+    <EmbeddedResource Include="res\DrumSamples\bass.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\cymbal.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\snare.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\tom1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\tom2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\tom3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Content Include="res\Synthie.ico" />
   </ItemGroup>
   <ItemGroup />

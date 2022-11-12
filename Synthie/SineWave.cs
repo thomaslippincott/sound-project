@@ -20,6 +20,13 @@ namespace Synthie
             freq = 440;
         }
 
+        public SineWave(double Phase, double Amp, double Freq)
+        {
+            phase = Phase;
+            amp = Amp;
+            freq = Freq;
+        }
+
         public SineWave(double _amp, double _freq)
         {
             phase = 0;
