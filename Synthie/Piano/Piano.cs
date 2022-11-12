@@ -52,23 +52,42 @@ namespace Synthie.Piano
 
         public override void SetNote(Note note)
         {
-            duration = note.Count * 60.0 / bpm;
-            Console.WriteLine(duration);
             sample = "../../res/PianoSamples/" + note.Pitch + "l.wav";
+            sound = new SoundChunk(sample);
+            duration = note.Count * 60.0 / bpm;
 
-            // Set envelope to attack for 5% of duration
-            dampen.Attack = duration * 0.05;
-            // Decay for 5% of duration
-            dampen.Decay = duration * 0.05;
-            // Sustain at 75% amplitude
-            dampen.Sustain = 0.75;
-            // And release for 15% of duration to mimic damper on key release
-            dampen.Release = duration * 0.15;
+            int pedal_setting = int.Parse(note.Setting);
+
+            // If pedal is on
+            if (pedal_setting == 1)
+            {
+                // Play the sample for its full duration
+                duration = sound.Duration;
+                // And only add attack and release to the beginning and end for 5% of the duration
+                // to allow for full decay without popping
+                dampen.Attack = duration * 0.05;
+                dampen.Decay = 0.0;
+                dampen.Sustain = 1.0;
+                dampen.Release = duration * 0.05;
+            }
+            else
+            {
+                // Increase duration slightly to mimic the way that the damper
+                // takes a few miliseconds to silence the string after key release
+                duration += 0.25;
+                // Set envelope to attack for 5% of duration
+                dampen.Attack = duration * 0.05;
+                // Decay for 5% of duration
+                dampen.Decay = duration * 0.05;
+                // Sustain at 85% amplitude
+                dampen.Sustain = 0.85;
+                // And release for 0.25s to mimic damper on key release
+                dampen.Release = 0.25;
+            }
         }
 
         public override void Start()
         {
-            sound = new SoundChunk(sample);
             time = 0;
             pos = 0;
 
