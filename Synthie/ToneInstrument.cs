@@ -4,13 +4,14 @@
     {
         private double duration;
         private double time;
-        private SineWave sinewave = new SineWave();
-
-        public double Frequency { get => sinewave.Frequency; set => sinewave.Frequency = value; }
+        private double frequency;
+        private SineWave sinewave;
 
         public ToneInstrument(Envelope env)
         {
             duration = 0.1;
+            time = 0.0;
+            frequency = 440.0;
             envelope = env;
         }
 
@@ -30,7 +31,10 @@
 
         public override void Start()
         {
-            sinewave.SampleRate = SampleRate;
+            sinewave = new SineWave(0.1, frequency)
+            {
+                SampleRate = SampleRate
+            };
             sinewave.Start();
             time = 0;
 
@@ -45,7 +49,7 @@
         public override void SetNote(Note note)
         {
             duration = note.Count * 60.0 / bpm;
-            Frequency = Notes.NoteToFrequency(note.Pitch);
+            frequency = Notes.NoteToFrequency(note.Pitch);
         }
     }
 }

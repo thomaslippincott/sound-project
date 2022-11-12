@@ -10,12 +10,15 @@ namespace Synthie
         private double beat;
         private double count;
         private string pitch;
+        private string setting;
 
         public double Beat { get => beat; }
         public double Count { get => count; }
         public string Instrument { get => instrument; }
         public int Measure { get => measure; }
         public string Pitch { get => pitch; }
+
+        public string Setting { get => setting; }
 
         public Note()
         {
@@ -47,6 +50,11 @@ namespace Synthie
                 if (attr.Name == "note")
                 {
                     pitch = attr.Value;
+                }
+
+                if (attr.Name == "setting")
+                {
+                    setting = attr.Value;
                 }
             }
         }

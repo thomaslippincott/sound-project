@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Additive\Additive.cs" />
+    <Compile Include="ADSR.cs" />
     <Compile Include="AR.cs" />
     <Compile Include="AudioNode.cs" />
     <Compile Include="Drums\Drums.cs" />
@@ -89,6 +90,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Notes.cs" />
+    <Compile Include="Tremolo.cs" />
     <Compile Include="Organ\Organ.cs" />
     <Compile Include="Piano\Piano.cs" />
     <Compile Include="Program.cs" />
