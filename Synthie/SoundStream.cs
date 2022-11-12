@@ -257,7 +257,6 @@ class SoundStream : Sound
             }
             return temp3;
         }
-
         else
             return ByteToFloat(temp);
 
