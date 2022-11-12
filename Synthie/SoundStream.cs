@@ -226,15 +226,41 @@ class SoundStream : Sound
         return count;
     }
 
+    //override public float[] ReadNextFrame()
+    //{
+    //    //sanity check
+    //    if (readerStream.Position >= readerStream.Length)
+    //        return null;
+
+    //    byte[] temp = new byte[bytesPerFrame];
+    //    readerStream.Read(temp, 0, bytesPerFrame);
+    //    return ByteToFloat(temp);
+    //}
+
     override public float[] ReadNextFrame()
     {
         //sanity check
         if (readerStream.Position >= readerStream.Length)
             return null;
-
+        
         byte[] temp = new byte[bytesPerFrame];
         readerStream.Read(temp, 0, bytesPerFrame);
-        return ByteToFloat(temp);
+
+        if (readerStream.WaveFormat.Encoding == WaveFormatEncoding.Pcm && readerStream.WaveFormat.BitsPerSample == 16)
+        {
+            short[] temp2 = ByteToShort(temp);
+            float[] temp3 = new float[Channels];
+
+            for (int i = 0; i < Channels; i++)
+            {
+                temp3[i] = (float)temp2[i] / short.MaxValue;
+            }
+            return temp3;
+        }
+
+        else
+            return ByteToFloat(temp);
+
     }
 
     override public void Seek(int i)

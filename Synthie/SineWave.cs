@@ -19,6 +19,14 @@ namespace Synthie
             freq = 440;
         }
 
+        public SineWave(double Phase, double Amp, double Freq)
+        {
+            phase = Phase;
+            amp = Amp;
+            freq = Freq;
+
+        }
+
         public override void Start()
         {
             phase = 0;
@@ -26,7 +34,7 @@ namespace Synthie
 
         public override bool Generate()
         {
-            frame[0] = amp * Math.Sin(phase * 2 * Math.PI);
+            frame[0] = (float)(amp * Math.Sin(phase * 2 * Math.PI));
             frame[1] = frame[0];
 
             phase += freq * samplePeriod;

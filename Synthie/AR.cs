@@ -22,7 +22,7 @@
                 ramp = (duration - time) / _release;
 
             for (int i = 0; i < frame.Length; i++)
-                frame[i] *= ramp;
+                frame[i] *= (float)ramp;
 
             time += samplePeriod;
             return time < duration;

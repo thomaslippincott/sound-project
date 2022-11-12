@@ -18,7 +18,8 @@
         {
             sinewave.Generate();         //make the base sample
             frame = sinewave.Frame();
-
+            frame[0] *= 2;
+            frame[1] *= 2;
             envelope.Generate();                       //adjust the gain on base sample
             frame[0] = envelope.Frame(0);      //pull the adjusted sample
             frame[1] = envelope.Frame(1);

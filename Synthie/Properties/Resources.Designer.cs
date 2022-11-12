@@ -495,6 +495,15 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        public static System.IO.UnmanagedMemoryStream bass {
+            get {
+                return ResourceManager.GetStream("bass", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         public static System.IO.UnmanagedMemoryStream C1_l {
             get {
                 return ResourceManager.GetStream("C1_l", resourceCulture);
@@ -759,6 +768,15 @@ namespace Synthie.Properties {
         public static System.IO.UnmanagedMemoryStream C8s {
             get {
                 return ResourceManager.GetStream("C8s", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream cymbal {
+            get {
+                return ResourceManager.GetStream("cymbal", resourceCulture);
             }
         }
         
@@ -1663,12 +1681,48 @@ namespace Synthie.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream snare {
+            get {
+                return ResourceManager.GetStream("snare", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         public static System.Drawing.Icon Synthie {
             get {
                 object obj = ResourceManager.GetObject("Synthie", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream tom1 {
+            get {
+                return ResourceManager.GetStream("tom1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream tom2 {
+            get {
+                return ResourceManager.GetStream("tom2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        public static System.IO.UnmanagedMemoryStream tom3 {
+            get {
+                return ResourceManager.GetStream("tom3", resourceCulture);
             }
         }
     }
