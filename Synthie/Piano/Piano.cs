@@ -22,11 +22,11 @@ namespace Synthie.Piano
         private string sample;
         private float[] wavetable;
         private int pos;
-        private ADSR dampen = new ADSR();
 
-        public Piano()
+        public Piano(Envelope env)
         {
             duration = 0.1;
+            envelope = env;
             pos = 0;
         }
 
@@ -38,13 +38,12 @@ namespace Synthie.Piano
 
             pos++;
 
-            // If at the end of the sample, loop the last 5000 frames
             if (pos >= wavetable.Length)
-                pos = wavetable.Length - 5000;
+                pos = 0;
 
-            dampen.Generate();                       //adjust the gain on base sample
-            frame[0] = dampen.Frame(0);      //pull the adjusted sample
-            frame[1] = dampen.Frame(1);
+            envelope.Generate();                       //adjust the gain on base sample
+            frame[0] = envelope.Frame(0);      //pull the adjusted sample
+            frame[1] = envelope.Frame(1);
 
             time += samplePeriod; //normal time increment
             return time < duration;
@@ -53,17 +52,7 @@ namespace Synthie.Piano
         public override void SetNote(Note note)
         {
             duration = note.Count * 60.0 / bpm;
-            Console.WriteLine(duration);
-            sample = "../../res/PianoSamples/" + note.Pitch + "l.wav";
-
-            // Set envelope to attack for 5% of duration
-            dampen.Attack = duration * 0.05;
-            // Decay for 5% of duration
-            dampen.Decay = duration * 0.05;
-            // Sustain at 75% amplitude
-            dampen.Sustain = 0.75;
-            // And release for 15% of duration to mimic damper on key release
-            dampen.Release = duration * 0.15;
+            sample = "../../res/PianoSamples/" + note.Pitch + ".wav";
         }
 
         public override void Start()
@@ -82,10 +71,10 @@ namespace Synthie.Piano
 
             // Tell the AR object where it gets its samples from 
             // the sine wave object.
-            dampen.Source = this;
-            dampen.SampleRate = SampleRate;
-            dampen.Duration = duration;
-            dampen.Start();
+            envelope.Source = this;
+            envelope.SampleRate = SampleRate;
+            envelope.Duration = duration;
+            envelope.Start();
         }
     }
 }

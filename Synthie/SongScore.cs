@@ -83,9 +83,9 @@ namespace Synthie
                 }
                 if (note.Instrument == "Piano")
                 {
-                    //double a = note.C
-                    Envelope envelope = new ADSR();
-                    instrument = new Piano.Piano();
+                    // Envelope to prevent popping
+                    Envelope envelope = new AR(0.05, 0.1);
+                    instrument = new Piano.Piano(envelope);
                 }
                 if (note.Instrument == "Organ")
                 {
