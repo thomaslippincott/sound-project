@@ -78,14 +78,46 @@ namespace Synthie
 
                 // Create the instrument object
                 Instrument instrument = null;
+                
+                if (note.Instrument == "Tuba")
+                {
+
+                    instrument = new WaveSynthInstrument(WaveFactory.Tuba);
+                }
+
+                if (note.Instrument == "Sax")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Sax);
+                }
+
                 if (note.Instrument == "ToneInstrument")
                 {
-                    instrument = new WaveSynthInstrument(WaveFactory.Tuba);
+                    // Envelope to prevent popping
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new ToneInstrument(envelope);
+
+                }
+                if (note.Instrument == "Piano")
+                {
+                    //double a = note.C
+                    Envelope envelope = new ADSR();
+                    instrument = new Piano.Piano();
+                }
+                if (note.Instrument == "Organ")
+                {
+                    // Short attack, short decay envelope, release to prevent popping
+                    Envelope envelope = new ADSR(0.1, 0.1, 0.75, 0.05);
+                    instrument = new Organ.Organ(envelope);
                 }
 
                 if (note.Instrument == "Additive")
                 {
-                    instrument = new WaveSynthInstrument(WaveFactory.Sax);
+                    instrument = new Additive.Additive();
+                }
+
+                if (note.Instrument == "Drums")
+                {
+                    instrument = new Drums.Drums();
                 }
 
                 // Configure the instrument object

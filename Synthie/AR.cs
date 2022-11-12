@@ -5,6 +5,15 @@
         private double _attack;
         private double _release;
 
+        public double Attack { get { return _attack; } set { _attack = value; } }
+        public double Release { get { return _release; } set { _release = value; } }
+
+        public AR()
+        {
+            _attack = 0.05;
+            _release = 0.05;
+        }
+
         public AR(double attack, double release)
         {
             _attack = attack;
@@ -22,7 +31,7 @@
                 ramp = (duration - time) / _release;
 
             for (int i = 0; i < frame.Length; i++)
-                frame[i] *= ramp;
+                frame[i] *= (float)ramp;
 
             time += samplePeriod;
             return time < duration;

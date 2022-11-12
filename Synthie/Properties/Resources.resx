@@ -118,6 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  
   <data name="A0l" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\PianoSamples\A0l.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -262,6 +263,9 @@
   <data name="B7s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\PianoSamples\B7s.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="bass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\drumsamples\bass.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="C1l" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\PianoSamples\C1l.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -351,6 +355,9 @@
   </data>
   <data name="C8s" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\PianoSamples\C8s.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cymbal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\drumsamples\cymbal.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="D1l" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\PianoSamples\D1l.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -652,7 +659,20 @@
   <data name="pedalu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\PianoSamples\pedalu.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="snare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\drumsamples\snare.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+
   <data name="Synthie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\res\synthie.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tom1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\drumsamples\tom1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tom2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\drumsamples\tom2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tom3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\res\drumsamples\tom3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
