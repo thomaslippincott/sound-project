@@ -81,6 +81,19 @@
     <Compile Include="AR.cs" />
     <Compile Include="AudioNode.cs" />
     <Compile Include="Drums\Drums.cs" />
+    <Compile Include="Effects\Chorus.cs" />
+    <Compile Include="Effects\Effect.cs" />
+    <Compile Include="Effects\NoiseGatingEffect.cs" />
+    <Compile Include="Effects\Reverb.cs" />
+    <Compile Include="Effects\ReverbInputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Effects\ReverbInputs.Designer.cs" />
+    <Compile Include="Effects\RingModInputs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Effects\RingModInputs.Designer.cs" />
+    <Compile Include="Effects\RingModulation.cs" />
     <Compile Include="Envelope.cs" />
     <Compile Include="Instrument.cs" />
     <Compile Include="MainForm.cs">
@@ -95,6 +108,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Subtractive\Sawtooth.cs" />
+    <Compile Include="Subtractive\Square.cs" />
+    <Compile Include="Subtractive\Subtractive.cs" />
+    <Compile Include="Subtractive\Triangle.cs" />
     <Compile Include="Tremolo.cs" />
     <Compile Include="Organ\Organ.cs" />
     <Compile Include="Piano\Piano.cs" />
@@ -117,6 +134,8 @@
     <Compile Include="WaveTable\WaveFactory.cs" />
     <Compile Include="WaveTable\WaveSynthInstrument.cs" />
     <Compile Include="VibratoWave.cs" />
+    <EmbeddedResource Include="Effects\ReverbInputs.resx" />
+    <EmbeddedResource Include="Effects\RingModInputs.resx" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>

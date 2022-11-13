@@ -1,5 +1,6 @@
 ﻿using AudioProcess;
 using NAudio.Gui;
+using Synthie.Effects;
 using Synthie.WaveTable;
 using System;
 using System.Collections.Generic;
@@ -41,7 +42,6 @@ namespace Synthie.Drums
                 sample = new SoundChunk(Properties.Resources.bass);
             duration = Math.Min(sample.Duration, note.Count);
         }
-
 
         public override void Start()
         {
