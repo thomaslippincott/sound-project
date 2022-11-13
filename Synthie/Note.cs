@@ -11,13 +11,14 @@ namespace Synthie
         private double count;
         private string pitch;
         private string setting;
+        private XmlNode node;
 
         public double Beat { get => beat; }
         public double Count { get => count; }
         public string Instrument { get => instrument; }
         public int Measure { get => measure; }
         public string Pitch { get => pitch; }
-
+        public XmlNode Node { get => node; }
         public string Setting { get => setting; }
 
         public Note()
@@ -27,6 +28,7 @@ namespace Synthie
         public void XmlLoad(XmlNode xml, string instrument)
         {
             this.instrument = instrument;
+            this.node = xml;
 
             // Get a list of all attribute nodes and the
             // length of that list

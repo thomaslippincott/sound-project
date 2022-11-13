@@ -378,11 +378,13 @@
       <note measure="2" beat="1.5" count="0.25" note="G5"/>
       <note measure="2" beat="1.75" count="0.5" note="G5"/>
       <note measure="2" beat="2.25" count="0.5" note="F5"/>
-      <note measure="2" beat="2.75" count="0.25" note="A5"/>
-      <note measure="2" beat="3" count="0.5" note="G5"/>
+<note measure="2" beat = "2.75" count="0.75" note="A5">
+    <glissando start="3" count="0.25" note="G5"/>
+</note>
       <note measure="2" beat="3.5" count="0.25" note="F5"/>
-      <note measure="2" beat="3.75" count="0.25" note="F5"/>
-      <note measure="2" beat="4" count="0.5" note="D5"/>
+      <note measure="2" start="3.75" count="0.25" note="F5">
+      		<glissando start="4" count="0.5" note="D5"/>	
+      </note>
       <note measure="2" beat="4.75" count="0.25" note="D5"/>
 	
       <note measure="3" beat="1" count="0.25" note="G#5"/>

@@ -131,6 +131,7 @@
     <Compile Include="SoundStream.cs" />
     <Compile Include="Synthesizer.cs" />
     <Compile Include="ToneInstrument.cs" />
+    <Compile Include="WaveTable\Glissando.cs" />
     <Compile Include="WaveTable\WaveFactory.cs" />
     <Compile Include="WaveTable\WaveSynthInstrument.cs" />
     <Compile Include="VibratoWave.cs" />

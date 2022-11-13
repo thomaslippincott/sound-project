@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score bpm="100" beatspermeasure="4">
+	
+   <instrument instrument="Bruh">
+	   <note measure="1" beat="1" count="6" note="D4">
+		   <glissando beat="3" count=".5" note="F4"/>
+		   <glissando beat="4" count=".5" note="D4"/>
+	   </note>
+	   <note measure="3" start="1" count="6" note="D4">
+		   <glissando start="3" count=".5" note="F4"/>
+		   <glissando start="4" count=".5" note="D5"/>
+	   </note>
+	   <note measure="5" start="1" count="6" note="D4">
+		   <glissando start="3" count=".5" note="F4"/>
+		   <glissando start="4" count=".5" note="C5"/>
+	   </note>
+   </instrument>
+	
+</score>

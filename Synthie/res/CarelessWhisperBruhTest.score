@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score bpm="60" beatspermeasure="4">
+<instrument instrument="Bruh">
+
+<note measure="2" beat = "1" count="0.75" note="A5">
+    <glissando start="0.25" count="0.5" note="G5"/>
+</note>
+
+   </instrument>
+</score>
