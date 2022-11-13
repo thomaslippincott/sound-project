@@ -30,7 +30,10 @@ namespace Synthie
         public double SamplePeriod { get => samplePeriod; set => samplePeriod = value; }
         public double Time { get => time; }
 
-        private Effects.Effect effect;
+        private Effects.Effect effectpiano;
+        private Effects.Effect effectorgan;
+        private Effects.Effect effectadditive;
+        private Effects.Effect effectdrums;
 
         public SongScore()
         {
@@ -42,8 +45,11 @@ namespace Synthie
             bpm = 120;
             secperbeat = 60.0 / bpm;
             beatspermeasure = 4;
-
-            effect = new Effects.RingModulation(4410, 0.1, sampleRate);
+            
+            effectpiano = new Effects.Chorus(channels, sampleRate);
+            effectorgan = new Effects.Reverb(channels, sampleRate);
+            effectadditive = new Effects.Reverb(channels, sampleRate);
+            effectdrums = new Effects.Reverb(channels, sampleRate);
         }
 
         /// <summary>
@@ -83,6 +89,38 @@ namespace Synthie
                 {
                     Envelope envelope = new AR(0.05, 0.05);
                     instrument = new ToneInstrument(envelope);
+                    instrument.SetEffect(ref effectpiano);
+                }
+
+                if (note.Instrument == "Sawtooth")
+                {
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new Subtractive.Sawtooth();
+                    //instrument.SetEffect(ref effectpiano);
+                }
+
+                if (note.Instrument == "Square")
+                {
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new Subtractive.Square();
+                    //instrument.SetEffect(ref effectpiano);
+                }
+
+                if (note.Instrument == "Triangle")
+                {
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new Subtractive.Triangle();
+                    //instrument.SetEffect(ref effectpiano);
+                }
+
+                if (note.Instrument == "Piano")
+                {
+
+                    //to add effects to specific instruments
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new ToneInstrument(envelope);
+                    if(MainForm.reverb_dlg.Piano)
+                        instrument.SetEffect(ref effectpiano);
                 }
 
                 // Configure the instrument object
@@ -92,7 +130,7 @@ namespace Synthie
                     instrument.Bpm = bpm;
                     instrument.SetNote(note);
                     instrument.Start();
-                    instrument.SetEffect(ref effect);
+                    
                     instruments.Add(instrument);
                 }
 
@@ -155,7 +193,7 @@ namespace Synthie
             // per beat is beats per second.
             beat += SamplePeriod / secperbeat;
 
-            effect.UpdateTime();
+            effectpiano.UpdateTime();
 
             // When the measure is complete, we move to
             // a new measure.  We might be a fraction into

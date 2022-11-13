@@ -1,11 +1,12 @@
-﻿namespace Synthie
+﻿using System;
+
+namespace Synthie
 {
     public class ToneInstrument : Instrument
     {
         private double duration;
         private double time;
         private SineWave sinewave = new SineWave();
-        private Effects.Effect effect;
 
         public double Frequency { get => sinewave.Frequency; set => sinewave.Frequency = value; }
 

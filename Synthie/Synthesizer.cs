@@ -73,14 +73,11 @@ namespace Synthie
             double freq = 1000;
             double duration = 5;
             double frameDuration = 1.0 / soundOut.SampleRate;
-            Effects.Effect eff = new RingModulation(50, 1, 44100);
             float val;
             for (double time = 0.0; time < duration; time += frameDuration)
             {
                 val = (float)(Math.Sin(time * 2 * Math.PI * freq));
-                val = (float)eff.Apply(val);
                 soundOut.WriteNextFrame(val);
-                eff.UpdateTime();
             }
         }
 
@@ -119,8 +116,6 @@ namespace Synthie
             //sanity chack for a file
             if (soundIn != null)
             {
-                //CallGCE();
-                //soundIn = new SoundStream(tempFilePath);
                 soundIn.Play();
             }
             else
@@ -164,15 +159,5 @@ namespace Synthie
         }
         #endregion
 
-        #region Effect Calls
-
-        public void CallGCE()
-        {
-            Save("temp.wav");
-            //Effects.Effects.GranCanyonEffect(tempFilePath, "temp.wav");
-            Effects.Effects.Chorus(tempFilePath, "temp.wav");
-
-        }
-        #endregion
     }
 }

@@ -11,7 +11,7 @@ namespace Synthie.Effects
     public class Reverb : Effect
     {
         private double[,] queue;
-        private float max_delay;
+        private double max_delay;
         private int wr_loc = 0;
         private int rd_loc = 0;
         private int queue_size = 0;
@@ -20,8 +20,9 @@ namespace Synthie.Effects
         private int c = 0;
         public Reverb(int channels_cnt, float samplerate)
         {
-            max_delay = 0.6f;
-            taps = 3;
+            max_delay = MainForm.reverb_dlg.Delay;
+            taps = MainForm.reverb_dlg.Taps;
+            wet_percentage = MainForm.reverb_dlg.WetPercentage;
             sample_rate = samplerate;
             channels = channels_cnt;
             queue_size = (int)((sample_rate * max_delay) + 0.5) + 1;

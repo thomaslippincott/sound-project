@@ -13,11 +13,11 @@ namespace Synthie.Effects
         private double freq;
         private double amp;
 
-        public RingModulation(double fr, double am, double samplerate)
+        public RingModulation(double samplerate)
         {
             phase = 0;
-            freq = fr;
-            amp = am;
+            freq = MainForm.rm_dlg.Frequency;
+            amp = MainForm.rm_dlg.Amplitude;
             sample_rate = samplerate;
         }
 

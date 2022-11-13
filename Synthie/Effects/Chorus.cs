@@ -41,6 +41,7 @@ namespace Synthie.Effects
             data = (queue[rd_loc, c] + queue[(rd_loc + 55) % queue_size, c] + 
                 queue[(rd_loc + 110) % queue_size, c] + queue[(rd_loc + 165) % queue_size, c]);
 
+            c = (c + 1) % channels;
             return data;
         }
 

@@ -16,6 +16,8 @@ namespace Synthie.Effects
         //float timeperframe = 0;
         float threshold = 0;
         float time_stamp;
+        float cutoff = 0;
+        float prev_frame;
         
         public NoiseGatingEffect(float tpf, float th)
         {
@@ -25,10 +27,13 @@ namespace Synthie.Effects
             hold = false;
             release = false;
             threshold = th;
+            cutoff = th - (th*0.2f);
+            prev_frame = 0;
         }
 
         public override double Apply(double frame)
         {
+
             if(frame >= threshold)
             {
                 if (!attack)
@@ -40,7 +45,7 @@ namespace Synthie.Effects
                 }
                 return threshold + (frame - threshold) * Math.Min((time - time_stamp) / 0.5f, 1);
             }
-            else if (attack || (hold && time - time_stamp < 0.5f))
+            else if ((attack || (hold && time - time_stamp < 0.5f)) && frame >= cutoff)
             {
                 if (!hold)
                 {
@@ -48,10 +53,13 @@ namespace Synthie.Effects
                     hold = true;
                     release = false;
                     time_stamp = time;
+
                 }
-                return frame;
+
+                prev_frame = (float)frame;
+                return prev_frame;
             }
-            else
+            else if ((hold || (release && time - time_stamp < 0.5f)) && frame > 0)
             {
                 if (!release)
                 {
@@ -60,9 +68,9 @@ namespace Synthie.Effects
                     release = true;
                     time_stamp = time;
                 }
-                return frame * Math.Max(0.5f - (time - time_stamp), 0);
+                return prev_frame * Math.Max(0.5f - (time - time_stamp), 0);
             }
-            return frame;
+            return 0;
         }
 
         public override void UpdateTime()
