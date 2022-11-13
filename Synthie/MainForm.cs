@@ -7,6 +7,7 @@ Total  100
  */
 
 using System;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace Synthie
@@ -14,6 +15,9 @@ namespace Synthie
     public partial class MainForm : Form
     {
         Synthesizer synth = new Synthesizer();
+
+        public static Effects.ReverbInputs reverb_dlg = new Effects.ReverbInputs();
+        public static Effects.RingModInputs rm_dlg = new Effects.RingModInputs();
 
         public MainForm()
         {
@@ -88,6 +92,16 @@ namespace Synthie
             {
                 synth.OpenScore(openFileDlg.FileName);
             }
+        }
+
+        private void reverbOptions_Click(object sender, EventArgs e)
+        {
+            reverb_dlg.ShowDialog();
+        }
+
+        private void ringModOption_Click(object sender, EventArgs e)
+        {
+            rm_dlg.ShowDialog();
         }
     }
 }
