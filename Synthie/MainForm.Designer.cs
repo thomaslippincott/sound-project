@@ -45,7 +45,6 @@
             this.songToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDlg = new System.Windows.Forms.SaveFileDialog();
             this.openFileDlg = new System.Windows.Forms.OpenFileDialog();
-            this.additiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,12 +56,11 @@
             this.fileToolStripMenuItem,
             this.generateToolStripMenuItem,
             this.playbackToolStripMenuItem,
-            this.tasksToolStripMenuItem,
-            this.additiveToolStripMenuItem});
+            this.tasksToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(2133, 49);
+            this.menuStrip1.Size = new System.Drawing.Size(1503, 49);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,14 +76,14 @@
             // openScoreToolStripMenuItem
             // 
             this.openScoreToolStripMenuItem.Name = "openScoreToolStripMenuItem";
-            this.openScoreToolStripMenuItem.Size = new System.Drawing.Size(361, 54);
+            this.openScoreToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
             this.openScoreToolStripMenuItem.Text = "Open Score...";
             this.openScoreToolStripMenuItem.Click += new System.EventHandler(this.openScoreToolStripMenuItem_Click);
             // 
             // exitItem
             // 
             this.exitItem.Name = "exitItem";
-            this.exitItem.Size = new System.Drawing.Size(361, 54);
+            this.exitItem.Size = new System.Drawing.Size(448, 54);
             this.exitItem.Text = "Exit";
             this.exitItem.Click += new System.EventHandler(this.exitItem_Click);
             // 
@@ -162,7 +160,7 @@
             // songToolStripMenuItem
             // 
             this.songToolStripMenuItem.Name = "songToolStripMenuItem";
-            this.songToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.songToolStripMenuItem.Size = new System.Drawing.Size(253, 54);
             this.songToolStripMenuItem.Text = "Song";
             this.songToolStripMenuItem.Click += new System.EventHandler(this.songToolStripMenuItem_Click);
             // 
@@ -174,17 +172,11 @@
             // 
             this.openFileDlg.Filter = "Score files (*.score)|*.score|All Files (*.*)|*.*";
             // 
-            // additiveToolStripMenuItem
-            // 
-            this.additiveToolStripMenuItem.Name = "additiveToolStripMenuItem";
-            this.additiveToolStripMenuItem.Size = new System.Drawing.Size(151, 45);
-            this.additiveToolStripMenuItem.Text = "Additive";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2133, 1073);
+            this.ClientSize = new System.Drawing.Size(1503, 1073);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -216,7 +208,6 @@
         private System.Windows.Forms.ToolStripMenuItem tasksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem songToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openScoreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem additiveToolStripMenuItem;
     }
 }
 

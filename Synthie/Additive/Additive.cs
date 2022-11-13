@@ -25,8 +25,8 @@ namespace Synthie.Additive
             duration = 0.1;
             envelope = new AR(attack, release);
             vibe = false;
-            //sinewave.Alpha = 4.0;
-            //sinewave.VibratoFrequency = 3.0; 
+            vibewave.Alpha = 4.0;
+            vibewave.VibratoFrequency = 5.0; 
         }
         public override void SetNote(Note note)
         {
