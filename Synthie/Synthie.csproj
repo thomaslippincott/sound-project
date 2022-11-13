@@ -159,6 +159,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="res\SubtractiveSamples\box.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\SubtractiveSamples\sawtooth.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\SubtractiveSamples\triangle.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Content Include="res\WaveTable\Bruh-sound-effect.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

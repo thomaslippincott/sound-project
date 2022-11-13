@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score bpm="60" beatspermeasure="4">
+<instrument instrument="Drums">
+	<note measure="1" beat="1" count="1" note="bass"/>
+	<note measure="1" beat="2.75" count="0.25" note="bass"/>
+	<note measure="1" beat="3" count="1" note="bass"/>
+	<note measure="1" beat="2" count="0.25" note="bass"/>
+	<note measure="1" beat="4" count="0.25" note="bass"/>
+
+	<note measure="2" beat="1" count="1" note="snare"/>
+	<note measure="2" beat="2.75" count="0.25" note="snare"/>
+	<note measure="2" beat="3" count="1" note="snare"/>
+	<note measure="2" beat="2" count="0.25" note="snare"/>
+	<note measure="2" beat="4" count="0.25" note="snare"/>
+	
+	<note measure="3" beat="1" count="1" note="cymbal"/>
+	<note measure="3" beat="2.75" count="0.25" note="cymbal"/>
+	<note measure="3" beat="3" count="0.5" note="cymbal"/>
+	<note measure="3" beat="3.5" count="0.5" note="cymbal"/>
+	<note measure="3" beat="2" count="0.25" note="cymbal"/>
+	<note measure="3" beat="4" count="0.25" note="cymbal"/>
+
+	<note measure="4" beat="1" count="1" note="tom1"/>
+	<note measure="4" beat="2.75" count="0.25" note="tom1"/>
+	<note measure="4" beat="3" count="1" note="tom1"/>
+	<note measure="4" beat="2" count="0.25" note="tom1"/>
+	<note measure="4" beat="4" count="0.25" note="tom1"/>
+
+	<note measure="5" beat="1" count="1" note="tom2"/>
+	<note measure="5" beat="2.75" count="0.25" note="tom2"/>
+	<note measure="5" beat="3" count="1" note="tom2"/>
+	<note measure="5" beat="2" count="0.25" note="tom2"/>
+	<note measure="5" beat="3.75" count="0.25" note="tom2"/>
+	<note measure="5" beat="4" count="0.25" note="tom2"/>
+
+	<note measure="6" beat="1" count="1" note="tom3"/>
+	<note measure="6" beat="2.75" count="0.25" note="tom3"/>
+	<note measure="6" beat="3" count="1" note="tom3"/>
+	<note measure="6" beat="2" count="0.25" note="tom3"/>
+	<note measure="6" beat="4" count="0.25" note="tom3"/>
+
+	<note measure="7" beat="1" count="1" note="bass"/>
+	<note measure="7" beat="1" count="4" note="cymbal"/>
+	<note measure="7" beat="2.75" count="0.25" note="bass"/>
+	<note measure="7" beat="3" count="0.5" note="bass"/>
+	<note measure="7" beat="3.5" count="0.5" note="bass"/>
+	<note measure="7" beat="2" count="0.25" note="snare"/>
+	<note measure="7" beat="4" count="0.25" note="snare"/>
+
+	<note measure="8" beat="1" count="1" note="tom1"/>
+	<note measure="8" beat="1" count="4" note="cymbal"/>
+	<note measure="8" beat="2.75" count="0.25" note="tom2"/>
+	<note measure="8" beat="3" count="1" note="tom1"/>
+	<note measure="8" beat="2" count="0.25" note="tom3"/>
+	<note measure="8" beat="4" count="0.25" note="tom3"/>
+   </instrument>
+</score>

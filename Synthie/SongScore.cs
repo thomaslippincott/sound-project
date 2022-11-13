@@ -31,6 +31,11 @@ namespace Synthie
         public double SamplePeriod { get => samplePeriod; set => samplePeriod = value; }
         public double Time { get => time; }
 
+        private Effects.Effect effectpiano;
+        private Effects.Effect effectorgan;
+        private Effects.Effect effectadditive;
+        private Effects.Effect effectdrums;
+
         public SongScore()
         {
             channels = 2;
@@ -43,6 +48,10 @@ namespace Synthie
             beatspermeasure = 4;
 
             WaveFactory.SampleRate = sampleRate;
+            effectpiano = new Effects.Chorus(channels, sampleRate);
+            effectorgan = new Effects.Reverb(channels, sampleRate);
+            effectadditive = new Effects.Reverb(channels, sampleRate);
+            effectdrums = new Effects.Reverb(channels, sampleRate);
         }
 
         /// <summary>
@@ -107,22 +116,50 @@ namespace Synthie
                     //double a = note.C
                     Envelope envelope = new ADSR();
                     instrument = new Piano.Piano();
+                    if (MainForm.reverb_dlg.Piano)
+                        instrument.SetEffect(ref effectpiano);
                 }
                 if (note.Instrument == "Organ")
                 {
                     // Short attack, short decay envelope, release to prevent popping
                     Envelope envelope = new ADSR(0.1, 0.1, 0.75, 0.05);
                     instrument = new Organ.Organ(envelope);
+                    if (MainForm.reverb_dlg.Organ)
+                        instrument.SetEffect(ref effectorgan);
                 }
 
                 if (note.Instrument == "Additive")
                 {
                     instrument = new Additive.Additive();
+                    if (MainForm.reverb_dlg.Additive)
+                        instrument.SetEffect(ref effectadditive);
                 }
 
                 if (note.Instrument == "Drums")
                 {
                     instrument = new Drums.Drums();
+                    if (MainForm.reverb_dlg.Drums)
+                        instrument.SetEffect(ref effectdrums);
+                }
+                if (note.Instrument == "Sawtooth")
+                {
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new Subtractive.Sawtooth();
+                    //instrument.SetEffect(ref effectpiano);
+                }
+
+                if (note.Instrument == "Square")
+                {
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new Subtractive.Square();
+                    //instrument.SetEffect(ref effectpiano);
+                }
+
+                if (note.Instrument == "Triangle")
+                {
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new Subtractive.Triangle();
+                    //instrument.SetEffect(ref effectpiano);
                 }
 
                 // Configure the instrument object
