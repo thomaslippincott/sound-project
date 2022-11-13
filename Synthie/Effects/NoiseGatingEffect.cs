@@ -19,15 +19,15 @@ namespace Synthie.Effects
         float cutoff = 0;
         float prev_frame;
         
-        public NoiseGatingEffect(float tpf, float th)
+        public NoiseGatingEffect(float thresh_hold, float time_per_frame)
         {
-            timeperframe = tpf;
+            timeperframe = time_per_frame;
             time = 0;
             attack = false;
             hold = false;
             release = false;
-            threshold = th;
-            cutoff = th - (th*0.2f);
+            threshold = thresh_hold;
+            cutoff = threshold - (threshold*0.3f);
             prev_frame = 0;
         }
 
@@ -43,9 +43,9 @@ namespace Synthie.Effects
                     release = false;
                     time_stamp = time;
                 }
-                return threshold + (frame - threshold) * Math.Min((time - time_stamp) / 0.5f, 1);
+                return frame;
             }
-            else if ((attack || (hold && time - time_stamp < 0.5f)) && frame >= cutoff)
+            else if ((attack || (hold && time - time_stamp < 0.05f)) && frame >= cutoff)
             {
                 if (!hold)
                 {
@@ -59,7 +59,7 @@ namespace Synthie.Effects
                 prev_frame = (float)frame;
                 return prev_frame;
             }
-            else if ((hold || (release && time - time_stamp < 0.5f)) && frame > 0)
+            else if ((hold || (release && time - time_stamp < 0.05f)) && frame > 0)
             {
                 if (!release)
                 {
@@ -68,7 +68,7 @@ namespace Synthie.Effects
                     release = true;
                     time_stamp = time;
                 }
-                return prev_frame * Math.Max(0.5f - (time - time_stamp), 0);
+                return prev_frame * Math.Max(0.05f - (time - time_stamp), 0);
             }
             return 0;
         }
