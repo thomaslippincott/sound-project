@@ -119,7 +119,8 @@ namespace Synthie.WaveTable
 
             if (framePosition > loopEndFrame && duration - time > sampleTime - sustainTime)
             {
-                framePosition = frameIndex = loopStartFrame;
+                frameIndex = loopStartFrame;
+                framePosition = frameIndex + (framePosition - (int)framePosition);
                 sound.Seek(loopStartFrame);
             }
             else

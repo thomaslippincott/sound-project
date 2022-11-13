@@ -1,9 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <score bpm="100" beatspermeasure="4">
-   <instrument instrument="ToneInstrument">
-	   <note measure="1" start="1" count="8" note="D4">
-		   <glissando start="4" count="1" note="E4"/>
-		   <glissando start="6" count="1" note="D4"/>
+	
+   <instrument instrument="OboeWaveInstrument">
+	   <note measure="1" start="1" count="6" note="D4">
+		   <glissando start="3" count=".5" note="F4"/>
+		   <glissando start="4" count=".5" note="D4"/>
+	   </note>
+	   <note measure="3" start="1" count="6" note="D4">
+		   <glissando start="3" count=".5" note="F4"/>
+		   <glissando start="4" count=".5" note="D5"/>
+	   </note>
+	   <note measure="5" start="1" count="6" note="D4">
+		   <glissando start="3" count=".5" note="F4"/>
+		   <glissando start="4" count=".5" note="C5"/>
 	   </note>
    </instrument>
+	
 </score>

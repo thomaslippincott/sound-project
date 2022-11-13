@@ -144,7 +144,13 @@
     <Content Include="res\WaveTable\Bruh-sound-effect.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="res\WaveTable\oboe_A4_05_forte_normal.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="res\WaveTable\saxophone_A4_05_forte_normal.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="res\WaveTable\trumpet_A4_05_forte_normal.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="res\WaveTable\tuba_A2_025_mezzo-piano_normal.wav">

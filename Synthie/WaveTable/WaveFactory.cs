@@ -49,11 +49,39 @@
         }
     }
 
+    public class Trumpet : WaveSample
+    {
+        public Trumpet(int SampleRate)
+        {
+            sample = new SoundStream("res/WaveTable/trumpet_A4_05_forte_normal.wav", 'r', SampleRate, 2);
+            startFrame = 12200;
+            loopStartFrame = 21823;
+            loopEndFrame = 22625;
+            endFrame = 34830;
+            sourceFreq = 452.0;
+        }
+    }
+
+    public class Oboe : WaveSample
+    {
+        public Oboe(int SampleRate)
+        {
+            sample = new SoundStream("res/WaveTable/oboe_A4_05_forte_normal.wav", 'r', SampleRate, 2);
+            startFrame = 5180;
+            loopStartFrame = 11415;
+            loopEndFrame = 17978;
+            endFrame = 35159;
+            sourceFreq = 452.0;
+        }
+    }
+
     public static class WaveFactory
     {
         public static int SampleRate { get; set; }
         public static WaveSample Bruh => new Bruh(SampleRate);
         public static WaveSample Tuba => new Tuba(SampleRate);
         public static WaveSample Sax => new Sax(SampleRate);
+        public static WaveSample Trumpet => new Trumpet(SampleRate);
+        public static WaveSample Oboe => new Oboe(SampleRate);
     }
 }

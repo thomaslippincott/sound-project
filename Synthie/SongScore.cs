@@ -78,14 +78,29 @@ namespace Synthie
 
                 // Create the instrument object
                 Instrument instrument = null;
-                if (note.Instrument == "ToneInstrument")
+                if (note.Instrument == "BruhInstrument")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Bruh);
+                }
+
+                if (note.Instrument == "SaxWaveInstrument")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Sax);
+                }
+
+                if (note.Instrument == "TubaWaveInstrument")
                 {
                     instrument = new WaveSynthInstrument(WaveFactory.Tuba);
                 }
 
-                if (note.Instrument == "Additive")
+                if (note.Instrument == "TrumpetWaveInstrument")
                 {
-                    instrument = new WaveSynthInstrument(WaveFactory.Sax);
+                    instrument = new WaveSynthInstrument(WaveFactory.Trumpet);
+                }
+
+                if (note.Instrument == "OboeWaveInstrument")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Oboe);
                 }
 
                 // Configure the instrument object
