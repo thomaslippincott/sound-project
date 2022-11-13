@@ -63,54 +63,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream A0_l {
-            get {
-                return ResourceManager.GetStream("A0_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A0_s {
-            get {
-                return ResourceManager.GetStream("A0_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream A0l {
             get {
                 return ResourceManager.GetStream("A0l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A0s {
-            get {
-                return ResourceManager.GetStream("A0s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A1_l {
-            get {
-                return ResourceManager.GetStream("A1_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A1_s {
-            get {
-                return ResourceManager.GetStream("A1_s", resourceCulture);
             }
         }
         
@@ -126,63 +81,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream A1s {
-            get {
-                return ResourceManager.GetStream("A1s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A2_l {
-            get {
-                return ResourceManager.GetStream("A2_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A2_s {
-            get {
-                return ResourceManager.GetStream("A2_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream A2l {
             get {
                 return ResourceManager.GetStream("A2l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A2s {
-            get {
-                return ResourceManager.GetStream("A2s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A3_l {
-            get {
-                return ResourceManager.GetStream("A3_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A3_s {
-            get {
-                return ResourceManager.GetStream("A3_s", resourceCulture);
             }
         }
         
@@ -198,63 +99,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream A3s {
-            get {
-                return ResourceManager.GetStream("A3s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A4_l {
-            get {
-                return ResourceManager.GetStream("A4_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A4_s {
-            get {
-                return ResourceManager.GetStream("A4_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream A4l {
             get {
                 return ResourceManager.GetStream("A4l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A4s {
-            get {
-                return ResourceManager.GetStream("A4s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A5_l {
-            get {
-                return ResourceManager.GetStream("A5_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A5_s {
-            get {
-                return ResourceManager.GetStream("A5_s", resourceCulture);
             }
         }
         
@@ -270,63 +117,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream A5s {
-            get {
-                return ResourceManager.GetStream("A5s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A6_l {
-            get {
-                return ResourceManager.GetStream("A6_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A6_s {
-            get {
-                return ResourceManager.GetStream("A6_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream A6l {
             get {
                 return ResourceManager.GetStream("A6l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A6s {
-            get {
-                return ResourceManager.GetStream("A6s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A7_l {
-            get {
-                return ResourceManager.GetStream("A7_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream A7_s {
-            get {
-                return ResourceManager.GetStream("A7_s", resourceCulture);
             }
         }
         
@@ -342,27 +135,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream A7s {
-            get {
-                return ResourceManager.GetStream("A7s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream B0l {
             get {
                 return ResourceManager.GetStream("B0l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream B0s {
-            get {
-                return ResourceManager.GetStream("B0s", resourceCulture);
             }
         }
         
@@ -378,27 +153,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream B1s {
-            get {
-                return ResourceManager.GetStream("B1s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream B2l {
             get {
                 return ResourceManager.GetStream("B2l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream B2s {
-            get {
-                return ResourceManager.GetStream("B2s", resourceCulture);
             }
         }
         
@@ -414,27 +171,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream B3s {
-            get {
-                return ResourceManager.GetStream("B3s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream B4l {
             get {
                 return ResourceManager.GetStream("B4l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream B4s {
-            get {
-                return ResourceManager.GetStream("B4s", resourceCulture);
             }
         }
         
@@ -450,27 +189,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream B5s {
-            get {
-                return ResourceManager.GetStream("B5s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream B6l {
             get {
                 return ResourceManager.GetStream("B6l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream B6s {
-            get {
-                return ResourceManager.GetStream("B6s", resourceCulture);
             }
         }
         
@@ -486,36 +207,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream B7s {
-            get {
-                return ResourceManager.GetStream("B7s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream bass {
             get {
                 return ResourceManager.GetStream("bass", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C1_l {
-            get {
-                return ResourceManager.GetStream("C1_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C1_s {
-            get {
-                return ResourceManager.GetStream("C1_s", resourceCulture);
             }
         }
         
@@ -531,63 +225,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream C1s {
-            get {
-                return ResourceManager.GetStream("C1s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C2_l {
-            get {
-                return ResourceManager.GetStream("C2_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C2_s {
-            get {
-                return ResourceManager.GetStream("C2_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream C2l {
             get {
                 return ResourceManager.GetStream("C2l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C2s {
-            get {
-                return ResourceManager.GetStream("C2s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C3_l {
-            get {
-                return ResourceManager.GetStream("C3_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C3_s {
-            get {
-                return ResourceManager.GetStream("C3_s", resourceCulture);
             }
         }
         
@@ -603,63 +243,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream C3s {
-            get {
-                return ResourceManager.GetStream("C3s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C4_l {
-            get {
-                return ResourceManager.GetStream("C4_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C4_s {
-            get {
-                return ResourceManager.GetStream("C4_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream C4l {
             get {
                 return ResourceManager.GetStream("C4l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C4s {
-            get {
-                return ResourceManager.GetStream("C4s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C5_l {
-            get {
-                return ResourceManager.GetStream("C5_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C5_s {
-            get {
-                return ResourceManager.GetStream("C5_s", resourceCulture);
             }
         }
         
@@ -675,63 +261,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream C5s {
-            get {
-                return ResourceManager.GetStream("C5s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C6_l {
-            get {
-                return ResourceManager.GetStream("C6_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C6_s {
-            get {
-                return ResourceManager.GetStream("C6_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream C6l {
             get {
                 return ResourceManager.GetStream("C6l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C6s {
-            get {
-                return ResourceManager.GetStream("C6s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C7_l {
-            get {
-                return ResourceManager.GetStream("C7_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C7_s {
-            get {
-                return ResourceManager.GetStream("C7_s", resourceCulture);
             }
         }
         
@@ -747,27 +279,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream C7s {
-            get {
-                return ResourceManager.GetStream("C7s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream C8l {
             get {
                 return ResourceManager.GetStream("C8l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream C8s {
-            get {
-                return ResourceManager.GetStream("C8s", resourceCulture);
             }
         }
         
@@ -783,54 +297,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream D1_l {
-            get {
-                return ResourceManager.GetStream("D1_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D1_s {
-            get {
-                return ResourceManager.GetStream("D1_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream D1l {
             get {
                 return ResourceManager.GetStream("D1l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D1s {
-            get {
-                return ResourceManager.GetStream("D1s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D2_l {
-            get {
-                return ResourceManager.GetStream("D2_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D2_s {
-            get {
-                return ResourceManager.GetStream("D2_s", resourceCulture);
             }
         }
         
@@ -846,63 +315,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream D2s {
-            get {
-                return ResourceManager.GetStream("D2s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D3_l {
-            get {
-                return ResourceManager.GetStream("D3_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D3_s {
-            get {
-                return ResourceManager.GetStream("D3_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream D3l {
             get {
                 return ResourceManager.GetStream("D3l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D3s {
-            get {
-                return ResourceManager.GetStream("D3s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D4_l {
-            get {
-                return ResourceManager.GetStream("D4_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D4_s {
-            get {
-                return ResourceManager.GetStream("D4_s", resourceCulture);
             }
         }
         
@@ -918,63 +333,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream D4s {
-            get {
-                return ResourceManager.GetStream("D4s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D5_l {
-            get {
-                return ResourceManager.GetStream("D5_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D5_s {
-            get {
-                return ResourceManager.GetStream("D5_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream D5l {
             get {
                 return ResourceManager.GetStream("D5l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D5s {
-            get {
-                return ResourceManager.GetStream("D5s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D6_l {
-            get {
-                return ResourceManager.GetStream("D6_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D6_s {
-            get {
-                return ResourceManager.GetStream("D6_s", resourceCulture);
             }
         }
         
@@ -990,45 +351,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream D6s {
-            get {
-                return ResourceManager.GetStream("D6s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D7_l {
-            get {
-                return ResourceManager.GetStream("D7_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D7_s {
-            get {
-                return ResourceManager.GetStream("D7_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream D7l {
             get {
                 return ResourceManager.GetStream("D7l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream D7s {
-            get {
-                return ResourceManager.GetStream("D7s", resourceCulture);
             }
         }
         
@@ -1044,27 +369,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream E1s {
-            get {
-                return ResourceManager.GetStream("E1s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream E2l {
             get {
                 return ResourceManager.GetStream("E2l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream E2s {
-            get {
-                return ResourceManager.GetStream("E2s", resourceCulture);
             }
         }
         
@@ -1080,27 +387,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream E3s {
-            get {
-                return ResourceManager.GetStream("E3s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream E4l {
             get {
                 return ResourceManager.GetStream("E4l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream E4s {
-            get {
-                return ResourceManager.GetStream("E4s", resourceCulture);
             }
         }
         
@@ -1116,27 +405,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream E5s {
-            get {
-                return ResourceManager.GetStream("E5s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream E6l {
             get {
                 return ResourceManager.GetStream("E6l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream E6s {
-            get {
-                return ResourceManager.GetStream("E6s", resourceCulture);
             }
         }
         
@@ -1152,63 +423,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream E7s {
-            get {
-                return ResourceManager.GetStream("E7s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F1_l {
-            get {
-                return ResourceManager.GetStream("F1_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F1_s {
-            get {
-                return ResourceManager.GetStream("F1_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream F1l {
             get {
                 return ResourceManager.GetStream("F1l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F1s {
-            get {
-                return ResourceManager.GetStream("F1s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F2_l {
-            get {
-                return ResourceManager.GetStream("F2_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F2_s {
-            get {
-                return ResourceManager.GetStream("F2_s", resourceCulture);
             }
         }
         
@@ -1224,63 +441,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream F2s {
-            get {
-                return ResourceManager.GetStream("F2s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F3_l {
-            get {
-                return ResourceManager.GetStream("F3_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F3_s {
-            get {
-                return ResourceManager.GetStream("F3_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream F3l {
             get {
                 return ResourceManager.GetStream("F3l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F3s {
-            get {
-                return ResourceManager.GetStream("F3s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F4_l {
-            get {
-                return ResourceManager.GetStream("F4_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F4_s {
-            get {
-                return ResourceManager.GetStream("F4_s", resourceCulture);
             }
         }
         
@@ -1296,63 +459,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream F4s {
-            get {
-                return ResourceManager.GetStream("F4s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F5_l {
-            get {
-                return ResourceManager.GetStream("F5_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F5_s {
-            get {
-                return ResourceManager.GetStream("F5_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream F5l {
             get {
                 return ResourceManager.GetStream("F5l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F5s {
-            get {
-                return ResourceManager.GetStream("F5s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F6_l {
-            get {
-                return ResourceManager.GetStream("F6_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F6_s {
-            get {
-                return ResourceManager.GetStream("F6_s", resourceCulture);
             }
         }
         
@@ -1368,63 +477,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream F6s {
-            get {
-                return ResourceManager.GetStream("F6s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F7_l {
-            get {
-                return ResourceManager.GetStream("F7_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F7_s {
-            get {
-                return ResourceManager.GetStream("F7_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream F7l {
             get {
                 return ResourceManager.GetStream("F7l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream F7s {
-            get {
-                return ResourceManager.GetStream("F7s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G1_l {
-            get {
-                return ResourceManager.GetStream("G1_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G1_s {
-            get {
-                return ResourceManager.GetStream("G1_s", resourceCulture);
             }
         }
         
@@ -1440,63 +495,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream G1s {
-            get {
-                return ResourceManager.GetStream("G1s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G2_l {
-            get {
-                return ResourceManager.GetStream("G2_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G2_s {
-            get {
-                return ResourceManager.GetStream("G2_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream G2l {
             get {
                 return ResourceManager.GetStream("G2l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G2s {
-            get {
-                return ResourceManager.GetStream("G2s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G3_l {
-            get {
-                return ResourceManager.GetStream("G3_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G3_s {
-            get {
-                return ResourceManager.GetStream("G3_s", resourceCulture);
             }
         }
         
@@ -1512,63 +513,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream G3s {
-            get {
-                return ResourceManager.GetStream("G3s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G4_l {
-            get {
-                return ResourceManager.GetStream("G4_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G4_s {
-            get {
-                return ResourceManager.GetStream("G4_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream G4l {
             get {
                 return ResourceManager.GetStream("G4l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G4s {
-            get {
-                return ResourceManager.GetStream("G4s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G5_l {
-            get {
-                return ResourceManager.GetStream("G5_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G5_s {
-            get {
-                return ResourceManager.GetStream("G5_s", resourceCulture);
             }
         }
         
@@ -1584,33 +531,6 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream G5s {
-            get {
-                return ResourceManager.GetStream("G5s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G6_l {
-            get {
-                return ResourceManager.GetStream("G6_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G6_s {
-            get {
-                return ResourceManager.GetStream("G6_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream G6l {
             get {
                 return ResourceManager.GetStream("G6l", resourceCulture);
@@ -1620,63 +540,9 @@ namespace Synthie.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        public static System.IO.UnmanagedMemoryStream G6s {
-            get {
-                return ResourceManager.GetStream("G6s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G7_l {
-            get {
-                return ResourceManager.GetStream("G7_l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G7_s {
-            get {
-                return ResourceManager.GetStream("G7_s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
         public static System.IO.UnmanagedMemoryStream G7l {
             get {
                 return ResourceManager.GetStream("G7l", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream G7s {
-            get {
-                return ResourceManager.GetStream("G7s", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream pedald {
-            get {
-                return ResourceManager.GetStream("pedald", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
-        /// </summary>
-        public static System.IO.UnmanagedMemoryStream pedalu {
-            get {
-                return ResourceManager.GetStream("pedalu", resourceCulture);
             }
         }
         

@@ -90,6 +90,11 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Notes.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Tremolo.cs" />
     <Compile Include="Organ\Organ.cs" />
     <Compile Include="Piano\Piano.cs" />
@@ -113,20 +118,14 @@
     <Compile Include="WaveTable\WaveFactory.cs" />
     <Compile Include="WaveTable\WaveSynthInstrument.cs" />
     <Compile Include="VibratoWave.cs" />
-    <Compile Include="WaveTable\WaveTable.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -141,7 +140,6 @@
     <None Include="res\CarelessVocalsDrumsChordsSoloV2.score" />
     <None Include="res\glisstest.score" />
     <None Include="res\some.score" />
-    <None Include="res\test1.score" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -165,7 +163,6 @@
     <Content Include="res\WaveTable\tuba_D2_1_mezzo-forte_normal.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-
     <EmbeddedResource Include="res\PianoSamples\A0l.wav" />
     <EmbeddedResource Include="res\PianoSamples\A1l.wav" />
     <EmbeddedResource Include="res\PianoSamples\A2l.wav" />
@@ -254,7 +251,6 @@
     <EmbeddedResource Include="res\PianoSamples\G#5l.wav" />
     <EmbeddedResource Include="res\PianoSamples\G#6l.wav" />
     <EmbeddedResource Include="res\PianoSamples\G#7l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G7s.wav" />
     <EmbeddedResource Include="res\DrumSamples\bass.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>

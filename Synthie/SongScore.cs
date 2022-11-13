@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Synthie.WaveTable;
+using System;
 using System.Collections.Generic;
+using System.Xml;
 
 namespace Synthie
 {
@@ -79,13 +81,27 @@ namespace Synthie
 
                 if (note.Instrument == "Tuba")
                 {
-
                     instrument = new WaveSynthInstrument(WaveFactory.Tuba);
                 }
 
                 if (note.Instrument == "Sax")
                 {
                     instrument = new WaveSynthInstrument(WaveFactory.Sax);
+                }
+
+                if (note.Instrument == "Trumpet")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Trumpet);
+                }
+
+                if (note.Instrument == "Oboe")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Oboe);
+                }
+
+                if (note.Instrument == "Bruh")
+                {
+                    instrument = new WaveSynthInstrument(WaveFactory.Bruh);
                 }
 
                 if (note.Instrument == "ToneInstrument")
