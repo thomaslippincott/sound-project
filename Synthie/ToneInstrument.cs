@@ -31,7 +31,7 @@
 
         public override void Start()
         {
-            sinewave = new SineWave(0.1, frequency)
+            sinewave = new SineWave(0.5, frequency)
             {
                 SampleRate = SampleRate
             };

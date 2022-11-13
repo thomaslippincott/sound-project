@@ -15,7 +15,7 @@ namespace Synthie.Organ
         private int vibrato_setting; // Integer noting which vibrato setting (1 - third, 2 - half, or 3 - full) is to be used, or if it is off (0)
         private int leslie_setting; // Integer which leslie speaker setting (1 - chorale, 2 - tremolo) is to be used, or if it is off (0)
         private static double[] drawbars = new double[] { 0.5, 1.5, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 8.0 }; // Harmonic multipliers for each drawbar on a Hammond organ
-        private static double[] vibrato_depth = new double[] { 3.0, 5.0, 10.0 }; // Vibrato frequency change multipliers for each vibrato setting (0 - third, 1 - half, or 2 - full)
+        private static double[] vibrato_depth = new double[] { 0.01, 0.02, 0.03 }; // Vibrato frequency change multipliers for each vibrato setting (0 - 1% shift, 1 - 2% shift, or 2 - 3% shift)
         private static double vibrato_freq = 7.0; // Vibrato frequency on a Hammond organ: 7Hz
         private static double[] leslie_freqs = new double[] { 0.833, 6.677 }; // Frequencies of the tremolo made by a leslie speaker by setting (0 - chorale, 1 - tremolo)
         private static double leslie_depth = 0.1; // Depth of the amplitude change made by leslie speaker
@@ -109,7 +109,7 @@ namespace Synthie.Organ
                     // If vibrato is on
                     if (vibrato_setting > 0)
                     {
-                        double v_alpha = vibrato_depth[vibrato_setting - 1]; // Vibrato depth based on vibrato setting
+                        double v_alpha = vibrato_depth[vibrato_setting - 1] * freq; // Vibrato depth based on vibrato setting
                         // Use vibrato waves to create harmonics
                         tonewheels.Add(new VibratoWave(amp, freq, v_alpha, vibrato_freq));
                     }
