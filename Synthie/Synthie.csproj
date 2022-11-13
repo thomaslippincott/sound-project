@@ -76,8 +76,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Additive\Additive.cs" />
+    <Compile Include="ADSR.cs" />
     <Compile Include="AR.cs" />
     <Compile Include="AudioNode.cs" />
+    <Compile Include="Drums\Drums.cs" />
     <Compile Include="Envelope.cs" />
     <Compile Include="Instrument.cs" />
     <Compile Include="MainForm.cs">
@@ -87,6 +90,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Notes.cs" />
+    <Compile Include="Tremolo.cs" />
     <Compile Include="Organ\Organ.cs" />
     <Compile Include="Piano\Piano.cs" />
     <Compile Include="Program.cs" />
@@ -108,6 +112,8 @@
     <Compile Include="WaveTable\Glissando.cs" />
     <Compile Include="WaveTable\WaveFactory.cs" />
     <Compile Include="WaveTable\WaveSynthInstrument.cs" />
+    <Compile Include="VibratoWave.cs" />
+    <Compile Include="WaveTable\WaveTable.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,184 +165,114 @@
     <Content Include="res\WaveTable\tuba_D2_1_mezzo-forte_normal.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <EmbeddedResource Include="res\PianoSamples\A0#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A0#s.wav" />
+
     <EmbeddedResource Include="res\PianoSamples\A0l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A0s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A1#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A1#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\A1l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A1s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A2#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A2#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\A2l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A2s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A3#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A3#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\A3l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A3s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A4#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A4#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\A4l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A4s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A5#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A5#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\A5l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A5s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A6#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A6#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\A6l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A6s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A7#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A7#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\A7l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\A7s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B0l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B0s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B1l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B1s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B2l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B2s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B3l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B3s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B4l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B4s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B5l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B5s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B6l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B6s.wav" />
     <EmbeddedResource Include="res\PianoSamples\B7l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\B7s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C1#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C1#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C1l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C1s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C2#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C2#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C2l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C2s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C3#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C3#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C3l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C3s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C4#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C4#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C4l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C4s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C5#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C5#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C5l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C5s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C6#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C6#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C6l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C6s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C7#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C7#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C7l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C7s.wav" />
     <EmbeddedResource Include="res\PianoSamples\C8l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\C8s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D1#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D1#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\D1l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D1s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D2#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D2#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\D2l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D2s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D3#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D3#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\D3l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D3s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D4#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D4#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\D4l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D4s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D5#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D5#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\D5l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D5s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D6#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D6#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\D6l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D6s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D7#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D7#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\D7l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\D7s.wav" />
     <EmbeddedResource Include="res\PianoSamples\E1l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\E1s.wav" />
     <EmbeddedResource Include="res\PianoSamples\E2l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\E2s.wav" />
     <EmbeddedResource Include="res\PianoSamples\E3l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\E3s.wav" />
     <EmbeddedResource Include="res\PianoSamples\E4l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\E4s.wav" />
     <EmbeddedResource Include="res\PianoSamples\E5l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\E5s.wav" />
     <EmbeddedResource Include="res\PianoSamples\E6l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\E6s.wav" />
     <EmbeddedResource Include="res\PianoSamples\E7l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\E7s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F1#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F1#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\F1l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F1s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F2#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F2#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\F2l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F2s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F3#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F3#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\F3l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F3s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F4#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F4#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\F4l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F4s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F5#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F5#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\F5l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F5s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F6#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F6#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\F6l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F6s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F7#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F7#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\F7l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\F7s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G1#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G1#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\G1l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G1s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G2#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G2#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\G2l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G2s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G3#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G3#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\G3l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G3s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G4#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G4#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\G4l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G4s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G5#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G5#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\G5l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G5s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G6#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G6#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\G6l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G6s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G7#l.wav" />
-    <EmbeddedResource Include="res\PianoSamples\G7#s.wav" />
     <EmbeddedResource Include="res\PianoSamples\G7l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#0l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#1l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#2l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#3l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#4l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#5l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#6l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\A#7l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\C#1l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\C#2l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\C#3l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\C#4l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\C#5l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\C#6l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\C#7l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\D#1l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\D#2l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\D#3l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\D#4l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\D#5l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\D#6l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\D#7l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\F#1l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\F#2l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\F#3l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\F#4l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\F#5l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\F#6l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\F#7l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G#1l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G#2l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G#3l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G#4l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G#5l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G#6l.wav" />
+    <EmbeddedResource Include="res\PianoSamples\G#7l.wav" />
     <EmbeddedResource Include="res\PianoSamples\G7s.wav" />
-    <EmbeddedResource Include="res\PianoSamples\pedald.wav" />
-    <EmbeddedResource Include="res\PianoSamples\pedalu.wav" />
+    <EmbeddedResource Include="res\DrumSamples\bass.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\cymbal.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\snare.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\tom1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\tom2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res\DrumSamples\tom3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <Content Include="res\Synthie.ico" />
   </ItemGroup>
   <ItemGroup />

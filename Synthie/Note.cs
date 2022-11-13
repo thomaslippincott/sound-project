@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Xml;
 
 namespace Synthie
 {
@@ -10,6 +9,7 @@ namespace Synthie
         private double beat;
         private double count;
         private string pitch;
+        private string setting;
         private XmlNode node;
 
         public double Beat { get => beat; }
@@ -18,6 +18,8 @@ namespace Synthie
         public int Measure { get => measure; }
         public string Pitch { get => pitch; }
         public XmlNode Node { get => node; }
+
+        public string Setting { get => setting; }
 
         public Note()
         {
@@ -50,6 +52,11 @@ namespace Synthie
                 if (attr.Name == "note")
                 {
                     pitch = attr.Value;
+                }
+
+                if (attr.Name == "setting")
+                {
+                    setting = attr.Value;
                 }
             }
         }

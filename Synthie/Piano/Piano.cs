@@ -1,26 +1,91 @@
-﻿using System;
+﻿using NAudio.SoundFont;
+using Synthie.WaveTable;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AudioProcess;
+using System.Security.Policy;
+using Synthie.Properties;
+using System.Resources;
 
 namespace Synthie.Piano
 {
     public class Piano : Instrument
     {
+
+        private double duration;
+        private double time;
+        private SoundChunk sound;
+        private string sample;
+        private float[] wavetable;
+        private int pos;
+        private ADSR dampen = new ADSR();
+
+        public Piano()
+        {
+            duration = 0.1;
+            pos = 0;
+        }
+
         public override bool Generate()
         {
-            throw new NotImplementedException();
+
+            frame[0] = wavetable[pos];
+            frame[1] = wavetable[pos];
+
+            pos++;
+
+            // If at the end of the sample, loop the last 5000 frames
+            if (pos >= wavetable.Length)
+                pos = wavetable.Length - 5000;
+
+            dampen.Generate();                       //adjust the gain on base sample
+            frame[0] = dampen.Frame(0);      //pull the adjusted sample
+            frame[1] = dampen.Frame(1);
+
+            time += samplePeriod; //normal time increment
+            return time < duration;
         }
 
         public override void SetNote(Note note)
         {
-            throw new NotImplementedException();
+            duration = note.Count * 60.0 / bpm;
+            Console.WriteLine(duration);
+            sample = "../../res/PianoSamples/" + note.Pitch + "l.wav";
+
+            // Set envelope to attack for 5% of duration
+            dampen.Attack = duration * 0.05;
+            // Decay for 5% of duration
+            dampen.Decay = duration * 0.05;
+            // Sustain at 75% amplitude
+            dampen.Sustain = 0.75;
+            // And release for 15% of duration to mimic damper on key release
+            dampen.Release = duration * 0.15;
         }
 
         public override void Start()
         {
-            throw new NotImplementedException();
+            sound = new SoundChunk(sample);
+            time = 0;
+            pos = 0;
+
+            wavetable = new float[sound.FrameCount];
+            float[] temp;
+            for (int i = 0; i < sound.FrameCount; i++)
+            {
+                temp = sound.ReadNextFrame();
+                wavetable[i] = temp[0];
+            }
+
+            // Tell the AR object where it gets its samples from 
+            // the sine wave object.
+            dampen.Source = this;
+            dampen.SampleRate = SampleRate;
+            dampen.Duration = duration;
+            dampen.Start();
         }
     }
 }

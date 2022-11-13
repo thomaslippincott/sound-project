@@ -1,7 +1,5 @@
-﻿using Synthie.WaveTable;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Xml;
 
 namespace Synthie
 {
@@ -78,29 +76,46 @@ namespace Synthie
 
                 // Create the instrument object
                 Instrument instrument = null;
-                if (note.Instrument == "BruhInstrument")
+
+                if (note.Instrument == "Tuba")
                 {
-                    instrument = new WaveSynthInstrument(WaveFactory.Bruh);
+
+                    instrument = new WaveSynthInstrument(WaveFactory.Tuba);
                 }
 
-                if (note.Instrument == "SaxWaveInstrument")
+                if (note.Instrument == "Sax")
                 {
                     instrument = new WaveSynthInstrument(WaveFactory.Sax);
                 }
 
-                if (note.Instrument == "TubaWaveInstrument")
+                if (note.Instrument == "ToneInstrument")
                 {
-                    instrument = new WaveSynthInstrument(WaveFactory.Tuba);
+                    // Envelope to prevent popping
+                    Envelope envelope = new AR(0.05, 0.05);
+                    instrument = new ToneInstrument(envelope);
+
+                }
+                if (note.Instrument == "Piano")
+                {
+                    //double a = note.C
+                    Envelope envelope = new ADSR();
+                    instrument = new Piano.Piano();
+                }
+                if (note.Instrument == "Organ")
+                {
+                    // Short attack, short decay envelope, release to prevent popping
+                    Envelope envelope = new ADSR(0.1, 0.1, 0.75, 0.05);
+                    instrument = new Organ.Organ(envelope);
                 }
 
-                if (note.Instrument == "TrumpetWaveInstrument")
+                if (note.Instrument == "Additive")
                 {
-                    instrument = new WaveSynthInstrument(WaveFactory.Trumpet);
+                    instrument = new Additive.Additive();
                 }
 
-                if (note.Instrument == "OboeWaveInstrument")
+                if (note.Instrument == "Drums")
                 {
-                    instrument = new WaveSynthInstrument(WaveFactory.Oboe);
+                    instrument = new Drums.Drums();
                 }
 
                 // Configure the instrument object
